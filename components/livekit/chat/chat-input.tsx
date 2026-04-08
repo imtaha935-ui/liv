@@ -58,4 +58,3 @@ export function ChatInput({ onSend, className, disabled, ...props }: ChatInputPr
     </form>
   );
 }
-
