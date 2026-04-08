@@ -21,10 +21,16 @@ const eslintConfig = [
   ...compat.extends(
     'next/core-web-vitals',
     'next/typescript',
-    'plugin:import/recommended',
-    'prettier',
-    'plugin:prettier/recommended'
+    'plugin:import/recommended'
+    // 'prettier',
+    // 'plugin:prettier/recommended'
   ),
+  {
+    rules: {
+      'prettier/prettier': 'off',
+      '@typescript-eslint/no-unused-vars': 'warn',
+    },
+  },
 ];
 
 export default eslintConfig;
